@@ -22,6 +22,7 @@ Información sobre el proyecto:
 - La carpeta IS es el proyecto que puede ser importado directamente a eclipse para ser usado con MAVEN para compilarlo.
 - También se puede usar el .war que hay dentro de IS/target para desplegar el proyecto sin necesidad de compilarlo.
 - El contenedor usado en la implementación para desplegar la aplicación es TOMCAT. Específicamente ha sido probado con TOMCAT v8.0.
+- El tiempo de carga de datos se puede ver en los comentarios antes mencionados. Aunque la mayor parte del tiempo de carga que percibe el usuario es en el rendering de la página JSP que toma mucho tiempo para pintar los 150K resultados en la tabla. Para mejorar esto podría ser paginado aunque no se ha implementado para cargar la JSP con todos los resultados.
 
 
 
