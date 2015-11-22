@@ -17,7 +17,7 @@ Aunque desde mi punto de vista la integración con hibernate directa configurand
 Información sobre el proyecto:
 
 - En la clase UserServiceImpl.java se ha añadido la implementación de hazelcast ya también se han añadido comentarios para la consola para medir tiempos. Estos tiempos se miden para saber los tiempos de carga y demás de hazelcast. No se tienen en cuenta tiempos de carga de la vista en JSP.
-- Dentro del proyecto hay un archivo src/main/resources/META-INF/config/database.properties en el que se puede configurar la base de datos, ususarios, conexiones y demás. Aunque con el script y la configuración que hay debería funcionar sin problemas y sin modificaciones ya que tiene el usuario default para base de datos. 
+- Dentro del proyecto hay un archivo src/main/resources/META-INF/config/database.properties en el que se puede configurar la base de datos, ususarios, conexiones y demás. Aunque con el script y la configuración que hay debería funcionar sin problemas y sin modificaciones ya que tiene el usuario default para base de datos user = 'root' y password=''. 
 - En la raiz del proyecto se encuentra el archivo database-script.sql para cargar los 150k registros requeridos a la bd. 
 - La carpeta IS es el proyecto que puede ser importado directamente a eclipse para ser usado con MAVEN para compilarlo y desplegarlo  haciendo un maven clean and maven install.
 - También se puede usar el .war que hay dentro de IS/target para desplegar el proyecto sin necesidad de compilarlo.
