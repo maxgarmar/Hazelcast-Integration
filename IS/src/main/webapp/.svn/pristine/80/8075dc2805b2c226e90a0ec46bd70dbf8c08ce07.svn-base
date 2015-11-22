@@ -1,0 +1,37 @@
+<div xmlns:s="http://www.springframework.org/tags" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+<jsp:output omit-xml-declaration="yes" />
+	<s:message var="app_name" code="application_name" htmlEscape="false" />
+	<s:message var="title" code="welcome_titlepane" arguments="${app_name}" htmlEscape="false" />
+    
+    <div class="container">
+		<h3>
+			<s:message code="welcome_h3" arguments="${app_name}" />
+		</h3>
+      
+		<ul class="entity">
+            <li><a href="block">Block</a></li>
+            <li><a href="category">Category</a></li>
+            <li><a href="course">Course</a></li>
+            <li><a href="driveschool">Driveschool</a></li>
+            <li><a href="family">Family</a></li>
+            <li><a href="grade">Grade</a></li>
+            <li><a href="license">License</a></li>
+            <li><a href="media">Media</a></li>
+            <li><a href="mediaquestion">Mediaquestion</a></li>
+            <li><a href="profile">Profile</a></li>
+            <li><a href="question">Question</a></li>
+            <li><a href="response">Response</a></li>
+            <li><a href="scoretest">Scoretest</a></li>
+            <li><a href="tests">Tests</a></li>
+            <li><a href="testsquestion">Testsquestion</a></li>
+            <li><a href="typecourse">Typecourse</a></li>
+            <li><a href="user">User</a></li>
+            <li><a href="userblock">Userblock</a></li>
+            <li><a href="usercourse">Usercourse</a></li>
+            <li><a href="userlicense">Userlicense</a></li>
+            <li><a href="userquestion">Userquestion</a></li>
+	    </ul>
+
+    </div> <!-- /container -->
+</div>
