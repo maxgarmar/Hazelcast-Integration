@@ -19,10 +19,11 @@ Información sobre el proyecto:
 - En la clase UserServiceImpl.java se ha añadido la implementación de hazelcast ya también se han añadido comentarios para la consola para medir tiempos. Estos tiempos se miden para saber los tiempos de carga y demás de hazelcast. No se tienen en cuenta tiempos de carga de la vista en JSP.
 - Dentro del proyecto hay un archivo src/main/resources/META-INF/config/database.properties en el que se puede configurar la base de datos, ususarios, conexiones y demás. Aunque con el script y la configuración que hay debería funcionar sin problemas y sin modificaciones ya que tiene el usuario default para base de datos. 
 - En la raiz del proyecto se encuentra el archivo database-script.sql para cargar los 150k registros requeridos a la bd. 
-- La carpeta IS es el proyecto que puede ser importado directamente a eclipse para ser usado con MAVEN para compilarlo.
+- La carpeta IS es el proyecto que puede ser importado directamente a eclipse para ser usado con MAVEN para compilarlo y desplegarlo  haciendo un maven clean and maven install.
 - También se puede usar el .war que hay dentro de IS/target para desplegar el proyecto sin necesidad de compilarlo.
 - El contenedor usado en la implementación para desplegar la aplicación es TOMCAT. Específicamente ha sido probado con TOMCAT v8.0.
 - El tiempo de carga de datos se puede ver en los comentarios antes mencionados. Aunque la mayor parte del tiempo de carga que percibe el usuario es en el rendering de la página JSP que toma mucho tiempo para pintar los 150K resultados en la tabla. Para mejorar esto podría ser paginado aunque no se ha implementado para cargar la JSP con todos los resultados.
+- La aplicación una vez desplegada se puede acceder mediante la url http://localhost:8080/InnovationStrategies/ si es así como está configurada en el puerto e ip.
 
 
 
